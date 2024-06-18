@@ -14,23 +14,44 @@
         <div class="navigation">
             <ul>
                 <li><a href="index.html" >Home</li></a>
-                <li><a href="history.html">History</li></a>
-                <li><a href="players.html">Players</li></a>
+                <li><a class="active">History</li></a>
+                <li><a href="players.html">Legends</li></a>
                 <li><a href="trophies.html">Trophies</li></a>
             </ul>
         </div>
     </div>
 
     <header>
-        <div class="header-container" id="header" aria-labelledby="header-heading">
-            <div class="text-container">
-                <h3>About club</h3>
-                <h1>Chelsea Football Club is a <span> football club</span> <br>based in Fulham, West London, England.</h1>
-                <h2>Founded in 1905, the team play their home games at Stamford Bridge. </h2>
-            </div>
-            <div class="image-container">
-                <img src="img/CHELSEA.jpg" alt="Group image" loading="lazy" aria-label="John's Group Image">
-            </div>
+        <div class="form-container">
+            <form id="history-form">
+                <label for="history-date">Pick a date to explore Chelsea's history:</label>
+                <input type="date" id="history-date" name="history-date" required>
+                
+                <label for="visitor-name">Your Name:</label>
+                <input type="text" id="visitor-name" name="visitor-name" required>
+                
+                <label for="visitor-email">Your Email:</label>
+                <input type="email" id="visitor-email" name="visitor-email" required>
+                
+                <label for="favorite-player">Your Favorite Chelsea Player:</label>
+                <select id="favorite-player" name="favorite-player" required>
+                    <option value="lampard">Frank Lampard</option>
+                    <option value="terry">John Terry</option>
+                    <option value="drogba">Didier Drogba</option>
+                    <option value="cech">Petr Cech</option>
+                    <option value="zola">Gianfranco Zola</option>
+                    <option value="desailly">Marcel Desailly</option>
+                    <option value="makelele">Claude Makelele</option>
+                    <option value="essien">Michael Essien</option>
+                    <option value="cole">Ashley Cole</option>
+                    <option value="ivanovic">Branislav Ivanovic</option>
+                </select>
+                
+                <label for="visitor-message">Any Questions or Comments:</label>
+                <textarea id="visitor-message" name="visitor-message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </header>
 </body>

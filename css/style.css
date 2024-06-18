@@ -12,13 +12,16 @@ body {
     
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #007bff;
     font-family: 'Exo 2', sans-serif;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     padding: 1em;
     
-    
-    
+}
+.navigation .active{
+   
+    color: #666;
 }
 ul{
     display: flex;
@@ -26,7 +29,7 @@ ul{
     justify-content: space-between;
     gap: 32px;
     margin-right: 1em;
-    margin-top:0.4em;
+    
 }
 li{
     list-style: none;
@@ -35,7 +38,7 @@ li a {
     color: white;
     margin: 20px;
     line-height: 24px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight:400 ;
     text-decoration: none;
     
@@ -108,7 +111,7 @@ div h1{
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid black;
     border-right: 1px solid black;
     width: 100%;
@@ -127,4 +130,144 @@ div h1{
     width: 50px;
     height: auto;
     display: block;
+}
+table {
+    
+    width: 90%;
+    margin-top: 55px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-spacing: 0;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+th,
+td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+#trofej {
+    height: 150px;
+    width: auto;
+}
+.form-container {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form select{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-container {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .header-container img {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .text-container {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 1em;
+    }
+
+    .header-container2 {
+        padding: 1em;
+    }
+
+    .form-container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    table {
+        
+        height: 10px;
+        margin-top: 55px;
+        border-spacing: 0;
+        align-items: center;
+    }
+    th,
+    td {
+        text-align: center;
+        padding: 5px;
+        border-bottom: 1px solid black;
+        font-size: 0.8em;
+    }
+    
+    td:nth-child(4) {
+        display: none;
+    }
+    th:nth-child(4) {
+        display: none;
+    }
+    td:nth-child(2) {
+        display: none;
+    }
+    th:nth-child(2) {
+        display: none;
+    }
+
+        
 }
