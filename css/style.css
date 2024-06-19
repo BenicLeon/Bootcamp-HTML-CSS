@@ -150,6 +150,58 @@ td {
     padding: 10px;
     border-bottom: 1px solid black;
 }
+
+#tablica {
+    width: 70%;
+    border-spacing: 0;
+    margin-top: 10;
+    position: fixed;
+    top: 5em;
+    right: 2em;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#playerForm{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 4em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+#playerForm form{
+    display: flex;
+    flex-direction: row;
+}
+
+#update{
+    background-color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 6px;
+cursor: pointer;
+color: black; 
+  border: 2px solid yellow;
+}
+#delete{
+background-color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+color: black; 
+  border: 2px solid red;
+}
 #trofej {
     height: 150px;
     width: auto;
@@ -161,6 +213,10 @@ td {
     border-radius: 10px;
     background-color: white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 form {
@@ -168,18 +224,19 @@ form {
     flex-direction: column;
 }
 
-form label {
+form label ,#playerForm label {
     margin-bottom: 5px;
+    
 }
 
-form input, form textarea, form select{
+form input, form textarea, form select,#playerForm input,#playerForm textarea,#playerForm select {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
+form button  {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -187,9 +244,33 @@ form button {
     color: white;
     cursor: pointer;
 }
-
+#editPlayerBtn{
+    background-color: yellow;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: black;
+}
+#addPlayerBtn{
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: black;
+}
 form button:hover {
     background-color: #0056b3;
+}
+#addPlayerButton:hover{
+    background-color: red;
 }
 
 @media (max-width: 768px) {
@@ -238,36 +319,4 @@ form button:hover {
         margin: 10px;
         padding: 10px;
     }
-}
-@media screen and (max-width: 600px) {
-    
-    table {
-        
-        height: 10px;
-        margin-top: 55px;
-        border-spacing: 0;
-        align-items: center;
-    }
-    th,
-    td {
-        text-align: center;
-        padding: 5px;
-        border-bottom: 1px solid black;
-        font-size: 0.8em;
-    }
-    
-    td:nth-child(4) {
-        display: none;
-    }
-    th:nth-child(4) {
-        display: none;
-    }
-    td:nth-child(2) {
-        display: none;
-    }
-    th:nth-child(2) {
-        display: none;
-    }
-
-        
 }
